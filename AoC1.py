@@ -5,3 +5,4 @@
 import sys 
 with open(input.txt) as input:
     lines = [line for line in input]
+print(lines)
