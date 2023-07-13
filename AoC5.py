@@ -24,11 +24,12 @@
 #  1   2   3
 def parse_instruction(instruction):
     pass
+    
 
 
 def move_crate(crate_stacks,instruction):
     #move 1 from 2 to 1#
-    pass
+    [][][]
 def move_crates(crate_stacks,instructions):
     
     pass 
