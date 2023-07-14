@@ -29,7 +29,7 @@ def parse_instruction(instruction):
 
 def move_crate(crate_stacks,instruction):
     #move 1 from 2 to 1#
-    [][][]
-def move_crates(crate_stacks,instructions):
+   # [][][]
+#def move_crates(crate_stacks,instructions):
     
     pass 
