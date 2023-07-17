@@ -46,8 +46,10 @@
 #     - k (file, size=7214296)
 from AoC7 import read_file,get_items,order_items, find_total
 import pytest
-def test_read_file():
+TEST_INPUT=["$ cd /", "$ ls", "dir a", "14848514 b.txt", "8504156 c.dat", "dir d", "$ cd a", "$ ls", "dir e", "29116 f", "2557 g", "62596 h.lst", "$ cd e", "$ ls", "584 i", "$ cd ..", "$ cd ..",
+            "$ cd d", "$ ls", "4060174 j", "8033020 d.log", "5626152 d.ext", "7214296 k"]
 
+def test_read_file():
     file = 'AoC7input.txt'      #Given
     expected_file = ('AoC7input.txt')  #When 
     actual_file = read_file(file=file)    #Then#
@@ -56,8 +58,7 @@ def test_read_file():
 def test_get_items():
     items = read_file(file=file)
     expected_items = ['cd /','ls','dir a','14848514 b.txt','8504156 c.dat','dir d','cd a','ls','dir e','29116 f','2557 g','62596 h.lst'
-                         'cd e','ls','584 i','cd ..','cd ..','cd d','ls','4060174 j','8033020 d.log','5626152 d.ext','7214296 k']
-    actual_items = get_items(items=items)
+                    'cd e','ls','584 i','cd ..','cd ..','cd d','ls','4060174 j','8033020 d.log','5626152 d.ext','7214296 k']    actual_items = get_items(items=items)
     assert expected_items==actual_items
 
 def test_order_items():
@@ -67,6 +68,13 @@ def test_order_items():
                     #When
     actual_order=                       #Then
     assert expected_command==actual_command
+
+
+def test_directory_size():
+    expected_directory_size
+    actual_directory_size = directory_size()
+    assert expected_directory_size==actual_directory_size
+
 
 def test_find_total():          #function to find total of each direct. #
     find_total = find_total(total=total)
