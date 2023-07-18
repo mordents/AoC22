@@ -15,5 +15,5 @@
 # How many characters need to be processed before the first start-of-packet marker is detected?
 for char in input():
     if char.isunique():
-        return char 
-    
+        pass 
+        
