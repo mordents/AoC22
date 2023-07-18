@@ -47,12 +47,15 @@ def move_crate(crate_stacks,instruction):
     #     moving_crate=crate_stacks[from_where].pop() #currently being moved
     #     crate_stacks[to_where].extend(moving_crate) 
     #     how_many-=1
-    moving_crates=[]
+    moving_crates = []
+    reversed_moving_crates = reversed(moving_crates)
     while how_many>0:
-            moving_crate=crate_stacks[from_where].pop()
-            moving_crates.append(moving_crate)
-            crate_stacks[to_where].extend(moving_crates)
-            how_many-=1
+        moving_crate=crate_stacks[from_where].pop()  #crate_stacks[to_where].extend(moving_crate) 
+        crate_stacks[to_where].extend(moving_crate)
+        how_many-=1
+    
+    crate_stacks.extend(reversed_moving_crates)
+    
     return crate_stacks
 
 def move_crates(crate_stacks, instructions):

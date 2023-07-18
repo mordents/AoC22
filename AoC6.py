@@ -14,5 +14,6 @@
 # zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw: first marker after character 11
 # How many characters need to be processed before the first start-of-packet marker is detected?
 for char in input():
-    isunique()
+    if char.isunique():
+        return char 
     
