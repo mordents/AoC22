@@ -14,7 +14,7 @@ def test_move_crate():
     crate_stacks = [                                                 
         ['Z','N'],['M','C','D'],['P']       #given there are crates #
     ]
-    instruction = 'move 1 from 2 to 1'
+    instruction = '1, 2, 1'
     expected_crates = [['Z','N','D'],['M','C'],['P']]
     actual_crates = move_crate(crate_stacks=crate_stacks,instruction=instruction)     #when#
     assert expected_crates==actual_crates #then#

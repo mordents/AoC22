@@ -25,7 +25,6 @@
 #         lines=f.readlines()
         
 #         return instructions
-
 def parse_instructions():
     with open('AoC5input.txt', 'r') as inp:
         lines=inp.readlines()           #read in lines#
